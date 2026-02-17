@@ -30,3 +30,8 @@ resource "aws_s3_bucket_versioning" "demo" {
   }
 
 }
+
+variable "environment" {}
+variable "bucket_name" {}
+
+

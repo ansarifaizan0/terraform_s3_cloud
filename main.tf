@@ -1,5 +1,5 @@
 provider "aws" {
-  region = var.region
+  region = "us-east-1"
 }
 
 resource "aws_s3_bucket" "demo" {
@@ -28,4 +28,5 @@ resource "aws_s3_bucket_versioning" "demo" {
   versioning_configuration {
     status = "Enabled"
   }
+
 }
